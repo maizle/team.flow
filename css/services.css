@@ -1,0 +1,124 @@
+
+.services {
+    margin: 100px 0;
+}
+.services__container {
+
+}
+.services__title{
+    color: #35414B;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px; 
+    margin-bottom: 56px;
+}
+.services__btn{
+    display: none;
+}
+.services__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 80px;
+}
+
+.services__item {
+    text-align: left;
+}
+
+.services__item-title {
+    margin-bottom: 8px;
+    color: #35414B;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px; 
+}
+.services__text {
+    color: #4E5A65;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+}
+.services__image {
+    margin-bottom: 24px;
+    position: relative;
+
+}
+
+.services__icon-bg{
+
+
+}
+
+.services__icon{
+    position: absolute;
+    top: 19.2px;left: 19.2px;
+}
+
+@media(max-width:415px){
+
+    .services {
+        margin: 56px 0;
+    }
+    .services__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services__title{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 18px; 
+        margin-bottom:40px;
+    }
+    .services__btn{
+        display: block;
+        border-radius: 4px;
+        border: 1px solid #ECE5FF;
+        background: #ECE5FF;
+        padding: 18px 85px;
+        color: #7259FA;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+
+    }
+    .services__items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        margin-bottom: 40px;
+    }
+    
+    .services__item {
+        display: none;
+    }
+    .services__item:nth-child(1) {
+        display: block;
+        text-align: center;
+    }
+    .services__item:nth-child(2) {
+        display: block;
+        text-align: center;
+    }
+    .services__item:nth-child(3) {
+        display: block;
+        text-align: center;
+    }
+    
+    .services__image {
+        margin-bottom: 16px;
+        position: relative;
+    
+    }
+    
+    .services__icon{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

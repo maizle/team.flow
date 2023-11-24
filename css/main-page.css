@@ -1,0 +1,221 @@
+
+.main {
+    margin-top: 116px;
+}
+
+.main-page {
+    margin-bottom: 106px;
+}
+.main-page__container.container {
+}
+.main-page__top {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+.main-page__body {
+}
+.main-page__bottom {
+}
+
+.main-page__title {
+color: #35414B;
+font-family: Inter;
+font-size: 64px;
+font-weight: 600;
+line-height: 72px; 
+}
+.main-page__subtitle {
+color: #4E5A65;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+
+}
+
+.main-page__big-media {
+    margin-bottom: 100px;
+}
+
+
+.main-page__get-account-btn.get-account-btn {
+    display: flex;
+}
+.get-account-btn__save {
+color: #FFF;
+font-size: 16px;
+font-weight: 500;
+line-height: 16px; 
+border-radius: 100px;
+background: #81C43B;
+padding: 8px 16px;
+z-index: 2;
+}
+.get-account-btn__get-account {
+display: block;
+color: #35414B;
+font-size: 16px;
+font-weight: 400;
+line-height: 16px; 
+padding: 8px 22px 8px 40px;
+
+border-radius: 0px 100px 100px 0px;
+background: #F2F9EB;
+position: relative;
+margin-left: -32px;
+z-index: 1;
+}
+
+.get-account-btn__get-account::after {
+    content: url('../img/icons/arrow-rigth.svg');
+    position: absolute;
+    top: 6px;right: 12px;
+}
+
+
+
+.main-page__form.form {
+    display: flex;
+}
+.form__input {
+    width: 322px;
+    padding: 18px 24px;
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid #E1E5EA;
+    background: #FFF;
+    color: #97A5B5;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px; 
+}
+.form__btn {
+    padding: 18px 45px;
+    border-radius: 0px 4px 4px 0px;
+    border: 1px solid #794CFF;
+    background: #794CFF;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px; 
+}
+
+
+.main-page__companies.companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.companies__title {
+    color: #4E5A65;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px; 
+    margin-bottom: 24px;
+}
+
+.companies__title span{
+    font-weight: 700;
+}
+
+.companies__list ul{
+    display: flex;
+}
+
+.companies__list li{
+    margin-right: 136px;
+}
+
+.companies__list li:last-child{
+    margin-right: 0;
+}
+
+
+
+
+@media(max-width:415px){
+    .main {
+        margin-top: 80px;
+    }
+.get-account-btn__save {
+display: none;
+}
+.get-account-btn__get-account {
+    padding: 4px 16px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px; 
+    margin: 0;
+}
+.get-account-btn__get-account::after {
+    content: url('../img/icons/arrow-rigth.svg');
+    position: absolute;
+    top: 3.5px;right:9px;
+
+}
+
+
+.main-page__title {
+    font-size: 32px;
+    line-height: 40px; 
+    }
+    .main-page__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    
+    }
+
+    .main-page__top {
+        max-width: 318px;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .main-page__form.form {
+        flex-direction: column;
+    }
+    .form__input {
+        margin-bottom: 8px;
+    }
+
+    .main-page__big-media {
+        margin-bottom: 56.71px;
+    }
+    .main-page__big-media img{
+       width: 100%;
+       height: auto;
+    }
+
+
+    .main-page__companies.companies {
+        max-width: 318px;
+        margin: 0 auto;
+    }
+
+    .companies__title {
+        font-size: 11px;
+        line-height: 11px; 
+        margin-bottom: 16.4px;
+    }
+
+    .companies__list li{
+        margin-right: 32px;
+    }
+    .companies__list li:nth-child(4){
+        margin-right: 0;
+    }
+    
+    
+    .companies__list li:last-child{
+        display: none;
+    }
+}
